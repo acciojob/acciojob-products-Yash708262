@@ -1,1 +1,35 @@
 /*  your css code here. If applicable */
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px; /* vertical spacing between rows */
+}
+
+/* First Row: DSA + MERN */
+#dsa {
+  width: 50%;
+  display: flex;
+  align-items: center; /* vertically center */
+}
+#mern {
+  width: 30%;
+  height: 75px;
+  margin-left: auto; /* push to right, space in between */
+}
+
+/* Second Row: AccioJob */
+#acciojob {
+  width: 75%;
+  margin: 0 auto; /* horizontally center */
+}
+
+/* Third Row: Business Analytics + Spring */
+#buisness-analytics {
+  width: 40%;
+  align-self: flex-end; /* hug bottom */
+}
+#spring {
+  flex: 1; /* take remaining space */
+  height: 75px;
+  margin-left: 10px; /* 10px gap */
+}
