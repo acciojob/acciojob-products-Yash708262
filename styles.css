@@ -1,35 +1,22 @@
-/*  your css code here. If applicable */
 #wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px; /* vertical spacing between rows */
+  justify-content: space-between;
+  row-gap: 24px;
 }
 
-/* First Row: DSA + MERN */
-#dsa {
-  width: 50%;
+.product {
   display: flex;
-  align-items: center; /* vertically center */
-}
-#mern {
-  width: 30%;
-  height: 75px;
-  margin-left: auto; /* push to right, space in between */
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: white;
 }
 
-/* Second Row: AccioJob */
-#acciojob {
-  width: 75%;
-  margin: 0 auto; /* horizontally center */
-}
+/* Specific products */
+#dsa { flex-basis: 50%; background-color: rgb(137, 0, 35); align-self: center; }
+#mern { flex-basis: 30%; height: 75px; background-color: rgb(243, 127, 27); }
+#acciojob { flex-basis: 75%; order: 1; background-color: rgb(98, 110, 227); }
+#buisness-analytics { flex-basis: 40%; order: 2; margin-right: 10px; align-self: flex-end; background-color: rgb(17, 150, 126); }
+#spring { flex: 1; height: 75px; }
 
-/* Third Row: Business Analytics + Spring */
-#buisness-analytics {
-  width: 40%;
-  align-self: flex-end; /* hug bottom */
-}
-#spring {
-  flex: 1; /* take remaining space */
-  height: 75px;
-  margin-left: 10px; /* 10px gap */
-}
